@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Bouquet for My Love</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <h1>My Digital Flower Bouquet</h1>
+        <!-- Include Labibu's name directly in the subtitle -->
+        <p>A small gesture to show you how much I miss you, Labibu.</p>
+      </div>
+
+      <!-- Floating petal elements; these give the page a gentle, animated feel.
+           Each petal has a random horizontal starting position and staggered
+           animation delay so they don't all fall in unison. -->
+      <div class="petals">
+        <div class="petal" style="left: 5%;  animation-delay: 0s;"></div>
+        <div class="petal" style="left: 15%; animation-delay: 2s;"></div>
+        <div class="petal" style="left: 25%; animation-delay: 4s;"></div>
+        <div class="petal" style="left: 35%; animation-delay: 6s;"></div>
+        <div class="petal" style="left: 45%; animation-delay: 8s;"></div>
+        <div class="petal" style="left: 55%; animation-delay: 10s;"></div>
+        <div class="petal" style="left: 65%; animation-delay: 12s;"></div>
+        <div class="petal" style="left: 75%; animation-delay: 14s;"></div>
+        <div class="petal" style="left: 85%; animation-delay: 16s;"></div>
+        <div class="petal" style="left: 95%; animation-delay: 18s;"></div>
+        <!-- Additional petals for a richer effect -->
+        <div class="petal" style="left: 10%; animation-delay: 3s;"></div>
+        <div class="petal" style="left: 30%; animation-delay: 5s;"></div>
+        <div class="petal" style="left: 50%; animation-delay: 7s;"></div>
+        <div class="petal" style="left: 70%; animation-delay: 9s;"></div>
+        <div class="petal" style="left: 90%; animation-delay: 11s;"></div>
+      </div>
+
+      <!-- Bouquet made from flower emojis. These are animated to gently
+           bob up and down, creating a lively digital bouquet. -->
+      <div class="bouquet">
+        <span style="animation-delay: 0s;">💐</span>
+        <span style="animation-delay: 0.3s;">🌸</span>
+        <span style="animation-delay: 0.6s;">🌹</span>
+        <span style="animation-delay: 0.9s;">🌷</span>
+        <span style="animation-delay: 1.2s;">🌺</span>
+        <span style="animation-delay: 1.5s;">🌼</span>
+        <span style="animation-delay: 1.8s;">💮</span>
+      </div>
+
+      <!-- Polar bear section. Clicking the bear triggers a heart shower. -->
+      <div class="bear">
+        <!-- The polar bear SVG sits in the root of the repository on GitHub.
+             Adjust the source accordingly. -->
+        <img src="polar_bear.svg" alt="Polar bear" />
+        <p class="tap-hint">Click the bear to send some love</p>
+      </div>
+
+      <!-- Message to the recipient -->
+      <div class="message">
+        <p>
+          Dear Labibu, though we're apart, my thoughts are always with you. Until
+          we can meet again, I hope this little digital bouquet and cuddly bear
+          brighten your day. You mean the world to me.
+        </p>
+      </div>
+    </div>
+
+    <!-- Hearts will be injected into the body dynamically by script.js when
+         the polar bear is clicked -->
+    <script src="script.js"></script>
+  </body>
+</html>
